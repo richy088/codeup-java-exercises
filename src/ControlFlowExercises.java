@@ -23,10 +23,25 @@ public class ControlFlowExercises {
 //        } while (i >= -10);
 
         //do-while loop where i is squared each time --NOT COMPLETE
-        int i = 2;
-        do {
-            System.out.println(i);
-            i *= i;
-        } while (i < 1_000_000);
+//        int i = 2;
+//        do {
+//            System.out.println(i);
+//            i *= i;
+//        } while (i < 1_000_000);
+
+        //Fizzbuzz
+        for(int i = 1; i < 100; i++) {
+            if (i % 3 == 0) {
+                if (i % 5 == 0) {
+                    System.out.println("Fizzbuzz");
+                } else {
+                    System.out.println("Fizz");
+                }
+            } else if (i % 5 == 0){
+                System.out.println("Buzz");
+            } else {
+                System.out.println(i);
+            }
+        }
     }
 }
