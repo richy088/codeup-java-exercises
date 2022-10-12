@@ -16,10 +16,17 @@ public class ControlFlowExercises {
 //        } while (i <= 100);
 
         //do-while loop that prints from 100 to -10 decreasing by 5
-        int i = 100;
+//        int i = 100;
+//        do {
+//            System.out.println(i);
+//            i-=5;
+//        } while (i >= -10);
+
+        //do-while loop where i is squared each time --NOT COMPLETE
+        int i = 2;
         do {
             System.out.println(i);
-            i-=5;
-        } while (i >= -10);
+            i *= i;
+        } while (i < 1_000_000);
     }
 }
