@@ -8,6 +8,9 @@ public class MethodsExercises {
         multiply(4, 3);
         divide(4, 3);
         mod(4, 3);
+
+        System.out.println(getInteger(1, 10));
+
         }
     public static void add(int firstNum, int secondNum) {
         System.out.println(firstNum + secondNum);
@@ -25,11 +28,15 @@ public class MethodsExercises {
         System.out.println(firstNum % secondNum);
     }
 
-    Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter a number between 1 and 10: ");
-    int userInput = scanner.nextInt();
 
     public static int getInteger(int min, int max) {
-        return;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number between 1 and 10: ");
+        int userInput = scanner.nextInt();
+        if (userInput < max && userInput > min) {
+            return userInput;
+        } else {
+            return 0;
+        }
     }
 }
