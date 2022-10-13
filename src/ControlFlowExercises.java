@@ -24,12 +24,12 @@ public class ControlFlowExercises {
 //            i-=5;
 //        } while (i >= -10);
 
-        //do-while loop where i is squared each time --NOT COMPLETE
+//        do-while loop where i is squared each time --get 0's when while is greater than 60k?
 //        int i = 2;
 //        do {
 //            System.out.println(i);
 //            i *= i;
-//        } while (i < 1_000_000);
+//        } while (i < 60_000);
 
         //Fizzbuzz
 //        for(int i = 1; i < 100; i++) {
@@ -45,19 +45,19 @@ public class ControlFlowExercises {
 //                System.out.println(i);
 //            }
 //        }
-        //Display table of powers
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("What number would you like to go up to? ");
-        int userInput = scanner.nextInt();
-        System.out.println("You entered: " + userInput);
-
-        System.out.println("Here is your table!");
-        System.out.println();
-        System.out.println("number | squared | cubed");
-        System.out.println("------ | ------- | -----");
-        for (int i = 1; i <= userInput; i++) {
-            System.out.println(i + "      |" + " " + (i*i) + "       " + "|" + " " + (i*i*i));
-        }
+        //Display table of powers --TABLE IS A BIT CROOKED??
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("What number would you like to go up to? ");
+//        int userInput = scanner.nextInt();
+//        System.out.println("You entered: " + userInput);
+//
+//        System.out.println("Here is your table!");
+//        System.out.println();
+//        System.out.println("number | squared | cubed");
+//        System.out.println("------ | ------- | -----");
+//        for (int i = 1; i <= userInput; i++) {
+//            System.out.println(i + "      |" + " " + (i*i) + "       " + "|" + " " + (i*i*i));
+//        }
 
     }
 }
