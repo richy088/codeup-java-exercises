@@ -9,6 +9,10 @@ public class Bob {
             System.out.println("Sure");
         } else if (userInput.trim().endsWith("!")) {
             System.out.println("Whoa, chill out!");
+        } else if (userInput.length() == 0) {
+            System.out.println("Fine. Be that way!");
+        } else {
+            System.out.println("Whatever");
         }
     }
 }
