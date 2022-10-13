@@ -59,5 +59,32 @@ public class ControlFlowExercises {
 //            System.out.println(i + "      |" + " " + (i*i) + "       " + "|" + " " + (i*i*i));
 //        }
 
+
+        // Convert given number into letter grades
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number from 0-100: ");
+        int userInput = scanner.nextInt();
+        System.out.println("You entered: " + userInput);
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Continue? [y/N] ");
+        String userDecision = sc.next();
+        boolean confirmation = userDecision.equals("y");
+        if (confirmation){
+            if (userInput <= 100 && userInput >= 88) {
+                System.out.println("You have an A");
+            } else if (userInput <= 87 && userInput >= 80) {
+                System.out.println("You have a B");
+            } else if (userInput <= 79 && userInput >= 67) {
+                System.out.println("You have a C");
+            } else if (userInput <= 66 && userInput >= 60) {
+                System.out.println("You have a D");
+            } else {
+                System.out.println("You have an F");
+            }
+        } else {
+            System.out.println("The end");
+        }
+
     }
 }
