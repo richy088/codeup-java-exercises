@@ -36,7 +36,7 @@ public class MethodsExercises {
         if (userInput < max && userInput > min) {
             return userInput;
         } else {
-            return 0;
+            return getInteger(1, 10);
         }
     }
 }
