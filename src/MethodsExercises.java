@@ -10,8 +10,10 @@ public class MethodsExercises {
         mod(4, 3);
 
         System.out.println(getInteger(1, 10));
-
+        System.out.println(getFactorial());
+        continueFactorial();
         }
+
     public static void add(int firstNum, int secondNum) {
         System.out.println(firstNum + secondNum);
     }
@@ -39,4 +41,24 @@ public class MethodsExercises {
             return getInteger(1, 10);
         }
     }
+
+    public static String getFactorial() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number between 1 and 10: ");
+        int userInput = scanner.nextInt();
+        return "User factorial: " + userInput;
+        }
+
+    public static String continueFactorial() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Continue? [y/N] ");
+        String userDecision = sc.next();
+        boolean confirmation = userDecision.equals("y");
+        if (confirmation){
+            return "User wants to continue";
+        } else {
+            return "The end";
+        }
+    }
+
 }
