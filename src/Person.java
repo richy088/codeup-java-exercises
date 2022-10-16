@@ -1,8 +1,7 @@
 public class Person {
 
     public static void main(String[] args) {
-        Person person1 = new Person();
-        person1.name = "Richard";
+        Person person1 = new Person("Richard");
 
         System.out.println(person1.getName());
         person1.sayHello();
@@ -20,5 +19,9 @@ public class Person {
 
     public void sayHello() {
         System.out.println("Hello " + this.name);
+    }
+
+    public Person(String user) {
+        name = user;
     }
 }
