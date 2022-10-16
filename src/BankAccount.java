@@ -30,5 +30,6 @@ public class BankAccount {
      public  void currentFunds() {
           System.out.println("Your current balance is: $" + this.balance + " dollars");
      }
+     //Code -> Generate -> Getter/Setter "fast way to create all the getters and setters"
 }
 
