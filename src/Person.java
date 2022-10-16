@@ -1,15 +1,24 @@
 public class Person {
+
+    public static void main(String[] args) {
+        Person person1 = new Person();
+        person1.name = "Richard";
+
+        System.out.println(person1.getName());
+        person1.sayHello();
+    }
+
     private String name;
 
     public String getName() {
-        return "hello";
+        return this.name;
     }
 
     public void setName(String name) {
-        System.out.println("hello");
+        this.name = name;
     }
 
     public void sayHello() {
-        System.out.println("hello");
+        System.out.println("Hello " + this.name);
     }
 }
