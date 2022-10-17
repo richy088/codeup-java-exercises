@@ -14,5 +14,10 @@ public class Main {
         funds.withdrawFunds(20);
         funds.withdrawFunds(1800);
         funds.withdrawFunds(500);
+
+        VipCustomer v1 = new VipCustomer();
+        System.out.println(v1.getName());
+//        BankAccount richAccount = new BankAccount(12345, 1000, "Richard");
+//        System.out.println(richAccount);
     }
 }

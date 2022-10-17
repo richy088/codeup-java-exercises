@@ -27,9 +27,30 @@ public class BankAccount {
           }
      }
 
-     public  void currentFunds() {
+     public void currentFunds() {
           System.out.println("Your current balance is: $" + this.balance + " dollars");
      }
      //Code -> Generate -> Getter/Setter "fast way to create all the getters and setters"
+
+//     public BankAccount(int accountNumber, int balance, String customerName) {
+//          System.out.println("BA constructor with parameters called");
+//          this.accountNumber = accountNumber;
+//          this.balance = balance;
+//          this.customerName = customerName;
+//     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -59,6 +59,9 @@ public class MethodsExercises {
         } else {
             return "The end";
         }
+        // int factorial = 1;
+        // for (int i = 1; i <= userInput; i++) {
+        // factorial = factorial * i;
     }
 
 }
