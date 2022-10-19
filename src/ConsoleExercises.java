@@ -3,8 +3,6 @@ public class ConsoleExercises {
     public static void main (String[] args) {
 
         //Why is this connected to previous print?
-        int myFavoriteNumber = 7;
-        System.out.println(myFavoriteNumber);
 
         //Only accepts with quotation marks
         String myString = "3.141519";
@@ -128,4 +126,3 @@ public class ConsoleExercises {
     }
 }
 
-}
