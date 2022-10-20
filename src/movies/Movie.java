@@ -5,6 +5,10 @@ public class Movie {
     private String name;
     private String category;
 
+    public Movie(String citizen_kane, String drama) {
+
+    }
+
     public void setName(String name) {
         this.name = name;
     }
