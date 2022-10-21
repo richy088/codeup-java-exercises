@@ -4,10 +4,6 @@ public class Rectangle {
     private int length;
     private int width;
 
-    public Rectangle() {
-        System.out.println("This is a rectangle");
-    }
-
     public int getLength() {
         return length;
     }
@@ -29,11 +25,13 @@ public class Rectangle {
         this.width = width;
     }
 
-    public int getArea(int length, int width) {
+    public Rectangle() {};
+
+    public int getArea() {
         return length * width;
     }
 
-    public int getPerimeter(int length, int width) {
+    public int getPerimeter() {
         return (2 * length) + (2 * width);
     }
 
