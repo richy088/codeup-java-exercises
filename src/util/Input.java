@@ -9,7 +9,8 @@ public class Input {
     public static void main(String[] args) {
         Input input = new Input();
         System.out.println(input.getString());
-        System.out.println(input.yesNo());
+//        System.out.println(input.yesNo());
+        System.out.println(input.getInt(1, 10));
     }
 
     public Scanner getScanner() {
@@ -34,19 +35,26 @@ public class Input {
         }
     }
 
+    public int getInt(int min, int max) {
+        System.out.println("Enter an integer between: " + min + " and " + max);
+        int userInput = scanner.nextInt();
+        if (userInput > min && userInput < max) {
+            return userInput;
+        } else {
+            //doesn't call own method but goes to the one below
+            return getInt();
+        }
+    }
+
+    public int getInt() {
+        System.out.print("Enter an integer: ");
+        return scanner.nextInt();
+    }
+
     public Input() {
         scanner = new Scanner(System.in);
     }
 
-
-
-        int getInt(int min, int max) {
-            return 7;
-        }
-
-        int getInt() {
-            return 8;
-        }
 
         double getDouble(double min, double max) {
             return 0.44;
