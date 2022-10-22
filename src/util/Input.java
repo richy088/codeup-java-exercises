@@ -4,6 +4,13 @@ import java.util.Scanner;
 
 public class Input {
 
+    private Scanner scanner;
+
+    public static void main(String[] args) {
+        Input input = new Input();
+        System.out.println(input.getString());
+        System.out.println(input.yesNo());
+    }
 
     public Scanner getScanner() {
         return scanner;
@@ -18,20 +25,20 @@ public class Input {
         return scanner.next();
     }
 
-    public static void main(String[] args) {
-        Input input = new Input();
-        System.out.println(input.getString());
+    //asks for input twice? why?
+    public boolean yesNo() {
+        if (getString().equals("yes") || getString().equals("y")) {
+            return true;
+        } else {
+            return false;
+        }
     }
-
-    private Scanner scanner;
 
     public Input() {
         scanner = new Scanner(System.in);
-        }
+    }
 
-        boolean yesNo() {
-            return true;
-        }
+
 
         int getInt(int min, int max) {
             return 7;

@@ -2,6 +2,7 @@ public class Printer {
 
     public static void main(String[] args) {
         Printer printer = new Printer();
+        Printer printer1 = new Printer();
         printer.addToner(25);
         printer.addToner(10);
         printer.addToner(100);
@@ -14,6 +15,10 @@ public class Printer {
     private int tonerLevel = 0;
     private int pagesPrinted;
     private boolean duplexPrinter;
+
+    public Printer() {
+        System.out.println("Do you need to use the printer?");
+    }
 
     public void addToner(int toner) {
         if (this.tonerLevel + toner >= 100) {
