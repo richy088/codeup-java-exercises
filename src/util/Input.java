@@ -47,8 +47,8 @@ public class Input {
         scanner = new Scanner(System.in);
     }
 
-    public double getDouble() {
-        System.out.println("Enter a double number");
+    public double getDouble(String prompt) {
+        System.out.println(prompt);
         return scanner.nextDouble();
     }
 
