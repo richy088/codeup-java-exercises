@@ -12,8 +12,13 @@ public class ShapesTest {
 //        System.out.println(box2.getArea());
 //        System.out.println(box2.getPerimeter());
 
-        Measurable myShape = new Square();
-        System.out.println(myShape.getArea());
-//        Measureable myShape = new Rectangle();
+        Measurable myShape = new Rectangle();
+        myShape.
+        System.out.println("The area of the square is: " + myShape.getArea());
+//        Measurable myShape = new Rectangle();
     }
 }
+
+// #9: we have to use getPerimeter() because it is a defined method in the interface
+
+// #10:

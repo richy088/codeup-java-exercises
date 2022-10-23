@@ -11,13 +11,14 @@ public class Rectangle extends Quadrilateral implements Measurable {
         return length * width;
     }
 
+    //why can't I use these two methods??
     @Override
     public void setLength(int length) {
-
+        super.length = length;
     }
     @Override
     public void setWidth(int width) {
-
+        super.width = width;
     }
 //    private int length;
 //    private int width;
