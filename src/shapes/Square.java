@@ -11,6 +11,15 @@ public class Square extends Quadrilateral {
         return super.length * super.length;
     }
 
+    @Override
+    public void setLength(int length) {
+    }
+
+    @Override
+    public void setWidth(int width) {
+
+    }
+
 //    private int side;
 //
 //    public int getSide() {
