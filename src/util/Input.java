@@ -6,13 +6,6 @@ public class Input {
 
     private Scanner scanner;
 
-    public static void main(String[] args) {
-        Input input = new Input();
-        System.out.println(input.getString());
-//        System.out.println(input.yesNo());
-        System.out.println(input.getInt(1, 10));
-    }
-
     public Scanner getScanner() {
         return scanner;
     }
@@ -38,12 +31,11 @@ public class Input {
     public int getInt(int min, int max) {
         System.out.println("Enter an integer between: " + min + " and " + max);
         int userInput = scanner.nextInt();
-        if (userInput > min && userInput < max) {
-            return userInput;
-        } else {
-            //doesn't call own method but goes to the one below
-            return getInt();
+        while (userInput < min || userInput > max) {
+            System.out.println("Enter an integer between: " + min + " and " + max);
+            userInput = scanner.nextInt();
         }
+        return userInput;
     }
 
     public int getInt() {
@@ -55,15 +47,20 @@ public class Input {
         scanner = new Scanner(System.in);
     }
 
+    public double getDouble() {
+        System.out.println("Enter a double number");
+        return scanner.nextDouble();
+    }
 
-        double getDouble(double min, double max) {
-            return 0.44;
+    double getDouble(double min, double max) {
+        System.out.println("Enter double number between: " + min + " and " + max);
+        double userInput = scanner.nextDouble();
+        while (userInput < min || userInput > max) {
+            System.out.println("Enter a double number between: " + min + " and " + max);
+            userInput = scanner.nextDouble();
         }
-
-        double getDouble() {
-            return 0.55;
-        }
-
+        return userInput;
+    }
 
 }
 
