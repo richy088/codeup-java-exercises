@@ -4,6 +4,12 @@ import java.util.ArrayList;
 
 public class Student {
     private String name;
+
+    public Student(String name, int grades) {
+        this.name = name;
+        addGrade(grades);
+    }
+
     private ArrayList<Integer> grades = new ArrayList<Integer>();
 
 //    public Student(String name, ArrayList<Integer> grades) {
@@ -28,12 +34,12 @@ public class Student {
         return sum / grades.size();
     };
 
-    public static void main(String[] args) {
-        Student student = new Student();
-        student.addGrade(100);
-        student.addGrade(90);
-        student.addGrade(80);
-        System.out.println(student.grades);
-        System.out.println("The average score is: " + student.getGradeAverage());
-    }
+//    public static void main(String[] args) {
+//        Student student = new Student();
+//        student.addGrade(100);
+//        student.addGrade(90);
+//        student.addGrade(80);
+//        System.out.println(student.grades);
+//        System.out.println("The average score is: " + student.getGradeAverage());
+//    }
 }
