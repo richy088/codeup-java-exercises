@@ -5,17 +5,12 @@ import java.util.ArrayList;
 public class Student {
     private String name;
 
-    public Student(String name, int grades) {
+    private ArrayList<Integer> grades;
+
+    public Student(String name) {
         this.name = name;
-        addGrade(grades);
+        grades = new ArrayList<Integer>();
     }
-
-    private ArrayList<Integer> grades = new ArrayList<Integer>();
-
-//    public Student(String name, ArrayList<Integer> grades) {
-//        this.name = name;
-//        new ArrayList<Integer>();
-//    }
 
     // returns the student's name
     public String getName() {
