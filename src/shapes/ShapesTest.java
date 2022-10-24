@@ -13,8 +13,10 @@ public class ShapesTest {
 //        System.out.println(box2.getPerimeter());
 
         Measurable myShape = new Rectangle();
-//        myShape
-        System.out.println("The area of the square is: " + myShape.getArea());
+        myShape.setLength(4);
+        myShape.setWidth(5);
+        System.out.println("The area of the rectangle is: " + myShape.getArea());
+        System.out.println("The perimeter of the rectangle is: " + myShape.getPerimeter());
 //        Measurable myShape = new Rectangle();
     }
 }
