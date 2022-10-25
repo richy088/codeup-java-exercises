@@ -29,6 +29,12 @@ public class Student {
         return sum / grades.size();
     };
 
+//    public boolean checkuser(String user) {
+//        if (this.name.contains(user)) {
+//            return true;
+//        }
+//    }
+
 //    public static void main(String[] args) {
 //        Student student = new Student();
 //        student.addGrade(100);

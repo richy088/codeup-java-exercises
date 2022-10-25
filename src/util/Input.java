@@ -1,5 +1,8 @@
 package util;
 
+import grades.GradesApplication;
+import grades.Student;
+
 import java.util.Scanner;
 
 public class Input {
@@ -20,11 +23,13 @@ public class Input {
     }
 
     //asks for input twice? why?
-    public boolean yesNo() {
-        if (getString().equals("yes") || getString().equals("y")) {
-            return true;
+    public void yesNo() {
+        System.out.println("Enter yes or no: ");
+        String userInput = scanner.nextLine();
+        if (userInput.equals("yes") || userInput.equals("y")) {
+            System.out.println("Would you like to enter a new item?");
         } else {
-            return false;
+            System.out.println("The end");
         }
     }
 
