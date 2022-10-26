@@ -2,6 +2,8 @@ package grades;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Scanner;
+
 import util.Input;
 
 public class GradesApplication {
@@ -31,12 +33,26 @@ public class GradesApplication {
         students.get("dannyfizz").addGrade(89);
         System.out.println(students.get("dannyfizz").getName() + " has an average GPA of " + students.get("dannyfizz").getGradeAverage());
 
-        System.out.println("------------------------------------------");
+        System.out.println("----------------------------------------------");
 
         System.out.println("Welcome!");
         System.out.println("Here are the GitHub usernames of our students:");
-        System.out.println("|rickyfizz| |tekiefizz| |joshyfizz|");
+        System.out.println("|rickyfizz| |tekiefizz| |joshyfizz| |dannyfizz|");
         System.out.println("What student would you like to see more information on?");
+        Scanner scanner = new Scanner(System.in);
+        String userInput = scanner.next();
+        while (!userInput.equals("no")) {
+            if (students.containsKey(userInput)) {
+                System.out.println(students.get(userInput).getName() + " has an average GPA of " + students.get(userInput).getGradeAverage());
+            } else {
+                System.out.println("No user with that username was found");
+            }
+            System.out.println("Which other student would you like info on?");
+            userInput = scanner.next();
+        }
+
+        System.out.println("Goodbye, have a wonderful day!");
+
 
 //        Input input = new Input();
 //        input.getString();
