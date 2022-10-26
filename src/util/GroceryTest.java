@@ -14,35 +14,6 @@ public class GroceryTest {
         System.out.println("yes or no?");
         String userInput = scanner.next();
 
-//        while (userInput.equals("yes")) {
-//            System.out.println("Would you like to enter an item?");
-//            userInput = scanner.next();
-//            System.out.println("Select a category");
-//            System.out.println("1. Meats");
-//            System.out.println("2. Breads");
-//            System.out.println("3. Produce");
-//            int userInput3 = scanner.nextInt();
-//            System.out.println("What kind of meat would you like??");
-//            String userInput4 = scanner.next();
-//            System.out.println("How many pieces?");
-//            int userInput5 = scanner.nextInt();
-//            GroceryProduct product = new GroceryProduct(userInput4, userInput5);
-//            meat.add(product);
-//            System.out.println("Would you like to enter more items?");
-//            String userInput6 = scanner.next();
-//                if (userInput6.equals("no")) {
-//                    System.out.println(meat);
-//                    break;
-//                } else {
-//                    System.out.println("What kind of meat would you like??");
-//                    String userInput8 = scanner.next();
-//                    System.out.println("How many pieces?");
-//                    int userInput9 = scanner.nextInt();
-//                    GroceryProduct product1 = new GroceryProduct(userInput8, userInput9);
-//                    meat.add(product1);
-//                    continue;
-//                }
-
             while (userInput.equals("yes")) {
                 System.out.println("Would you like to enter an item?");
                 userInput = scanner.next();
@@ -98,8 +69,56 @@ public class GroceryTest {
                             break;
                         }
                 }
-
         }
+    }
+}
+
+class GroceryProduct {
+    private String name;
+    private int quantity;
+
+    public GroceryProduct(String name, int quantity) {
+        this.name = name;
+        this.quantity = quantity;
+    }
+
+    @Override
+    public String toString() {
+        return "GroceryProd{" +
+                "name='" + name + '\'' +
+                ", quantity=" + quantity +
+                '}';
+    }
+}
+
+//        while (userInput.equals("yes")) {
+//            System.out.println("Would you like to enter an item?");
+//            userInput = scanner.next();
+//            System.out.println("Select a category");
+//            System.out.println("1. Meats");
+//            System.out.println("2. Breads");
+//            System.out.println("3. Produce");
+//            int userInput3 = scanner.nextInt();
+//            System.out.println("What kind of meat would you like??");
+//            String userInput4 = scanner.next();
+//            System.out.println("How many pieces?");
+//            int userInput5 = scanner.nextInt();
+//            GroceryProduct product = new GroceryProduct(userInput4, userInput5);
+//            meat.add(product);
+//            System.out.println("Would you like to enter more items?");
+//            String userInput6 = scanner.next();
+//                if (userInput6.equals("no")) {
+//                    System.out.println(meat);
+//                    break;
+//                } else {
+//                    System.out.println("What kind of meat would you like??");
+//                    String userInput8 = scanner.next();
+//                    System.out.println("How many pieces?");
+//                    int userInput9 = scanner.nextInt();
+//                    GroceryProduct product1 = new GroceryProduct(userInput8, userInput9);
+//                    meat.add(product1);
+//                    continue;
+//                }
 
 //        System.out.println("-------------------------------------------------------");
 
@@ -123,24 +142,3 @@ public class GroceryTest {
 //
 //        System.out.println("Bread Category: ");
 //        System.out.println(breads);
-
-    }
-}
-
-class GroceryProduct {
-    private String name;
-    private int quantity;
-
-    public GroceryProduct(String name, int quantity) {
-        this.name = name;
-        this.quantity = quantity;
-    }
-
-    @Override
-    public String toString() {
-        return "GroceryProd{" +
-                "name='" + name + '\'' +
-                ", quantity=" + quantity +
-                '}';
-    }
-}
