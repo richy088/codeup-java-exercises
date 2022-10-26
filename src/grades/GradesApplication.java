@@ -25,7 +25,7 @@ public class GradesApplication {
         students.get("joshyfizz").addGrade(92);
         System.out.println(students.get("joshyfizz").getName() + " has an average GPA of " + students.get("joshyfizz").getGradeAverage());
 
-        students.put("dannyfizz"), new Student("Daniel");
+        students.put("dannyfizz", new Student("Daniel"));
         students.get("dannyfizz").addGrade(91);
         students.get("dannyfizz").addGrade(90);
         students.get("dannyfizz").addGrade(89);
