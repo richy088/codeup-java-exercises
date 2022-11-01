@@ -1,4 +1,4 @@
-public class PetDog extends Pet {
+public class PetDog extends Pet implements Companion {
     boolean trained;
 
     public PetDog(String name, String type, boolean trained) {
@@ -12,5 +12,10 @@ public class PetDog extends Pet {
 
     public boolean isTrained() {
         return trained;
+    }
+
+    @Override
+    public String snuggle() {
+        return this.name + " wants to snuggle";
     }
 }

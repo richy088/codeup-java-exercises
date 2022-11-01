@@ -12,6 +12,10 @@ public class Practice {
         return (double) sum / array.length;
     }
 
+    public static void multiplyAll(int num, int[] array) {
+        System.out.println("something");
+    }
+
     public static void main(String[] args) {
         System.out.println(average(new int[]{2, 3, 4}));
         System.out.println(subtractTen(20));
