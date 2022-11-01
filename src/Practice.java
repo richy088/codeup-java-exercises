@@ -13,6 +13,7 @@ public class Practice {
     }
 
     public static void main(String[] args) {
-
+        System.out.println(average(new int[]{2, 3, 4}));
+        System.out.println(subtractTen(20));
     }
 }
