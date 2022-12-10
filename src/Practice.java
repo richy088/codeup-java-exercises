@@ -13,11 +13,19 @@ public class Practice {
     }
 
     public static void multiplyAll(int num, int[] array) {
-        System.out.println("something");
+        for (int i = 0; i < array.length; i++) {
+            int multiplied = array[i] * num;
+            System.out.println(multiplied);
+        }
     }
 
     public static void main(String[] args) {
-        System.out.println(average(new int[]{2, 3, 4}));
-        System.out.println(subtractTen(20));
+//        System.out.println(average(new int[]{2, 3, 4}));
+//        System.out.println(subtractTen(20));
+
+        int[][] primes = new int[3][3];
+        primes[2][2] = 1;
+
+        System.out.println(primes[1][2]);
     }
 }

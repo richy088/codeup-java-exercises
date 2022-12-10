@@ -5,8 +5,14 @@ public class Movie {
     private String name;
     private String category;
 
-    public Movie(String citizen_kane, String drama) {
+    public Movie(String name, String category) {
+        this.name = name;
+        this.category = category;
+    }
 
+    @Override
+    public String toString() {
+        return name + " -- " + category;
     }
 
     public void setName(String name) {

@@ -43,10 +43,11 @@ public class Input {
         return userInput;
     }
 
-    public int getInt() {
-        System.out.print("Enter an integer: ");
+    public int getInt(String prompt) {
+        System.out.print(prompt);
         return scanner.nextInt();
     }
+
 
     public Input() {
         scanner = new Scanner(System.in);

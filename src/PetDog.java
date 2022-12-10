@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Objects;
+
 public class PetDog extends Pet implements Companion {
     boolean trained;
 
@@ -17,5 +20,11 @@ public class PetDog extends Pet implements Companion {
     @Override
     public String snuggle() {
         return this.name + " wants to snuggle";
+    }
+
+    public static void allSnuggle(ArrayList<PetDog>petDogs) {
+        for (PetDog petDog : petDogs) {
+            System.out.println(petDog.snuggle());
+        }
     }
 }
